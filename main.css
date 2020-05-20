@@ -1,0 +1,662 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    text-align: center;
+}
+/*Global container*/
+.globalContainer{
+    max-width: 1900px;
+    min-width: 47vw;
+    margin: auto;
+}
+
+ /*Navigator container*/
+.navContainer{
+    max-width: 80%;
+    margin: auto;
+}
+
+
+
+/*navbar*/
+.navBackgroundColor{
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px
+}
+nav > div{
+    text-align: center;
+    flex: 1;
+}
+nav div > a{
+    font-size: 14px;
+    color: #d6d6d6;
+    text-decoration: none;
+}
+nav div > a:hover{
+    color: #e9e8e8;
+}
+nav div i{
+    font-size: 19px;
+}
+
+
+
+/*nav2bar*/
+.nav2BackgroundColor{
+    background-color: black;
+/*    background-color: #323232;*/
+    display: none;
+}
+.global2Container{
+    max-width: 950px;
+    margin: auto;
+}
+.nav2Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.nav2Container i{
+    color: #cccccb;
+}
+.dropdown button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: inherit;
+    color: #cccccb;
+}
+.dropdowncontent{
+    position: absolute;
+    background-color: #000000;
+/*    width: 100%;*/
+}
+.dropdowncontent a{
+    display: block;
+}
+
+
+
+/*Span*/
+.span > span{
+    display: block;
+    font-size: 12px;
+    padding: 7px 0px;
+}
+.span span a{
+    text-decoration: none;
+    color: #025ed2;
+}
+.span a:hover{
+    text-decoration: underline;
+    color: #025ed2;
+}
+ 
+
+
+/*Universal Style for Sections*/
+.title h1{
+    font-size: 56px;
+}
+.title > .slogan{
+    padding: 5px 0px 15px 0px;
+}
+.title .slogan p{
+    font-size: 28px;
+}
+.title .slogan span{
+    font-size: 18px;
+    color: #86868c;
+}
+.title .links > a{
+    text-decoration: none;
+    color: #0090ff;
+    font-size: 20px;
+    padding: 5px 0px;
+}
+.title i{
+    font-size: 18px;
+}
+.sectionOne, .sectionTwo, .sectionThree{
+    margin-bottom: 12px;
+}
+
+
+
+/*SectionOne*/
+.sectionOne{
+    
+/*    max-height: 60em;*/
+/*    height: 6.6em;*/
+/*    min-height: 65em;*/
+    
+    
+/*    max-height: 50vh;*/
+    background-color: #131313;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.sectionOne .title{
+    padding: 48px 0px;
+    padding-bottom: 80px
+} 
+.sectionOne .title .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 40px
+}
+.sectionOne .title .links a:hover{
+    text-decoration: underline;
+}
+.showcaseOne > img{
+    width: 62em;
+    padding-bottom: 115px;
+}
+/*SectionTwo*/
+.sectionTwo{
+/*    height: 1000px;*/
+    background-color: #fafafa;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.sectionTwo .title{
+    padding: 48px 0px;
+    padding-bottom: 0px
+} 
+.sectionTwo .title .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 100px;
+}
+.sectionTwo .title .links a:hover{
+    text-decoration: underline;
+}
+.sectionTwo img{
+    width: 100%;
+}
+/*SectionThree*/
+.sectionThree{
+/*    height: 1000px;*/
+    background-color: black;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.sectionThree .title{
+    padding: 48px 0px;
+    padding-bottom: 0px
+} 
+.sectionThree .title .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 145px;
+}
+.sectionThree .title .links a:hover{
+    text-decoration: underline;
+}
+.sectionThree img{
+    width: 100%;
+}
+
+
+
+/*RowOne*/
+.rowOne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 12px 12px 12px;
+}
+.rowOne .box{
+    width: 49.5%;
+    height: 580px;
+    cursor: pointer;
+}
+.rowOne .text{
+    padding-top: 50px;
+}
+.rowOne .text p{
+    font-size: 20px;
+}
+.rowOne a{
+    color: #0090ff;
+    text-decoration: none;
+}
+.rowOne .links a:hover{
+    text-decoration: underline;
+}
+/*Box One*/
+.rowOne .One{
+    background-image: url(images/rowOneBoxOne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: ;
+    background-color: #fafafa;
+}
+.rowOne .One .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 36%;
+}
+/*Box Two*/
+.rowOne .Two{
+    background-image: url(images/rowOneBoxTwo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: ;
+    background-color: #131118;
+    color: white;
+}
+.rowOne .Two .text:nth-child(odd){
+    font-size: 20px;
+}
+.rowOne .Two .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 31%; 
+}
+
+
+
+/*RowTwo*/
+.rowTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 12px 12px 12px;
+}
+.rowTwo .box{
+    width: 49.5%;
+    height: 580px;
+    cursor: pointer;
+}
+.rowTwo .text{
+    padding-top: 50px;
+}
+.rowTwo .text p{
+    font-size: 20px;
+}
+.rowTwo a{
+    color: #0090ff;
+    text-decoration: none;
+}
+.rowTwo .links a:hover{
+    text-decoration: underline;
+}
+/*Box One*/
+.rowTwo .One{
+    background-image: url(images/rowTwoBoxOne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: ;
+    background-color: #fafafa;
+}
+.rowTwo .One .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 30%;
+}
+/*Box Two*/
+.rowTwo .Two{
+    background-image: url(images/rowTwoBoxTwo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: ;
+    background-color: #131118;
+    color: white;
+}
+.rowTwo .Two .text:nth-child(odd){
+    font-size: 20px;
+}
+.rowTwo .Two .links{
+    padding-top: 231px
+}
+
+
+
+/*RowThree*/
+.rowThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 12px 12px 12px;
+}
+.rowThree .box{
+    width: 49.5%;
+    height: 580px;
+    cursor: pointer;
+}
+.rowThree .text{
+    padding-top: 50px;
+}
+.rowThree .text p{
+    font-size: 20px;
+}
+.rowThree a{
+    color: #0090ff;
+    text-decoration: none;
+}
+.rowThree .links a:hover{
+    text-decoration: underline;
+}
+/*Box One*/
+.rowThree .One{
+    background-image: url(images/rowThreeBoxOne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: ;
+    background-color: #fafafa;
+}
+.rowThree .One .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 30%;
+}
+/*Box One*/
+.rowThree .Two{
+    background-image: url(images/rowThreeBoxTwo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: ;
+    background-color: #12b42b;
+    color: white;
+}
+.rowThree .Two .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 25%;
+}
+.rowThree .Two .links a{
+    color: white;
+}
+
+
+
+/*Footer*/
+.footerBackgroundColor{
+    background-color: #1d1d1f;
+    color: #6c6c72;
+    text-align: left;
+    font-size: 12px;
+}
+.footer{
+    padding: 0px 15%;
+}
+.footer p{
+    padding: 20px 0px;
+}
+.footer a{
+    text-decoration: none;
+    color: #8a8a8f;
+}
+.footer a:hover{
+    text-decoration: underline;
+    color: #97979b;
+}
+
+.footerLinks{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerLinks button{
+    border: none;
+    background-color: inherit;
+    color: white;
+    padding: 10px 0px;
+    outline: none;
+}
+.footerLinks .content{
+    display: flex;
+    flex-direction: column;
+}
+.footerLinks .content > div{
+    padding: 7px 0px;
+}
+
+.copyrightsNlinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0px 30px 0px;
+}
+.copyrightsNlinks a{
+    display: block;
+    padding: 3px 15px;
+    border-right: solid 1px grey;
+}
+.copyrightsNlinks .phil{
+    margin-left: auto;
+}
+.copyrightsNlinks .site a{
+    border: none;
+}
+.copyrightsNlinks .phil a{
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/*@media for iPhone 6s Plus and Below*/
+@media(max-width: 414px){
+    .navBackgroundColor{
+        display: none;
+    }
+    .nav2BackgroundColor{
+        display: block;
+        position: sticky;
+        top: 0px;
+    }
+    #dropDownContent{
+        display: none;
+    }
+    .dropdowncontent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        height: 95vh;
+    }
+    .dropdowncontent input[type=text]{
+        margin: 15px 10px;
+        padding: 8px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        background-color: #1d1d1f;
+        font-size: 18px;
+    }
+    .dropdowncontent a{
+        text-decoration: none;
+        color: #b3b3b3;
+        padding: 15px 0px;
+        font-size: 16px;
+        border-bottom: solid #b3b3b3 1px;
+        margin: 0px 40px;
+    }
+    
+    
+    .span{
+        display: none;
+    }
+    
+    
+    .sectionOne, .sectionTwo, .sectionThree{
+        height: 70vh;
+    }
+    .sectionOne .title h1, .sectionTwo .title h1, .sectionThree .title h1{
+        font-size: 200%;
+    }
+    .sectionOne .slogan p, .sectionTwo .slogan p, .sectionThree .slogan p{
+        font-size: 120%;
+    }
+    .slogan span{
+        display: none;
+    }
+    .sectionOne{
+        background-color: #141414;
+        background-image: url(images/sectionOneMobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sectionTwo{
+        background-color: #fafafa;
+        background-image: url(images/sectionTwoMobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .sectionTwo > img{
+       display: none;
+    }
+    .sectionOne .showcaseOne img{
+        display: none;
+    }
+    
+    
+    
+    
+    .rowOne, .rowTwo, .rowThree{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .rowOne .Two{
+        background-image: url(images/rowOneBoxTwoMobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .rowTwo .One{
+        background-image: url(images/rowTwoBoxOneMobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .rowThree .One{
+        background-image: url(images/rowThreeBoxOneMobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .rowThree .Two{
+        background-image: url(images/rowThreeBoxTwoMobile.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    .rowOne .box{
+        width: 100%;
+        height: 580px;
+        cursor: pointer;
+        margin-bottom: 13px;
+    }
+    .rowTwo .box{
+        width: 100%;
+        height: 580px;
+        cursor: pointer;
+        margin-bottom: 13px;
+    }
+    .rowThree .box{
+        width: 100%;
+        height: 580px;
+        cursor: pointer;
+        margin-bottom: 13px;
+    } 
+    
+    
+    .footer{
+        padding: 0px 6%;
+    }
+    .footerLinks{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerLinks button{
+        width: 100%;
+        text-align: left;
+        border-bottom: solid 1px #6c6c72;
+        padding: 13px 0px;
+        outline: none;
+    }
+    .footerLinks .content{
+        display: none;
+    }
+   
+    .copyrightsNlinks .phil{
+        margin-left: 0px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+/*@media for iPad's and Up*/
+@media(max-width: 768px){
+    .sectionOne .showcaseOne > img{
+        width: 70%;
+    }
+    
+}
